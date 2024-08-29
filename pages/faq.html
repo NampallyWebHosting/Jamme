@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ's | Jamme</title>
+    <link rel="shortcut icon" href="../assets/WWG Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/others.css">
+</head>
+<body>
+    
+    <main>
+        <a href="../index.html" title="Jamme"><img src="../assets/Logo 2.png" alt="Jamme"></a>
+        <h2>FAQ's</h2>
+        <div class="details">
+            <p>Effective Date: July 7<sup>th</sup> 2021</p>
+            <h5>Are voice audio messages end-to-end encrypted ?</h5>
+            <p>Users can enable message encryption in their settings. In the app with message encryption turned on, each message is encrypted end-to-end: Both on-device and cloud processing were designed with layers of security to help keep your Jamme experience safe. We have safeguards in place to protect data from being hacked. Data sent to our cloud is encrypted and securely stored in the cloud servers.</p>
+            <h5>A brief description of our encryption model follows :</h5>
+            <p>End-to-end encryption for audio streams involves accessing the audio frame or packet and encrypting it post-compression before transmission to the Media Server or cloud. Currently, the cloud manages encryption. For storage in the cloud, we utilize SSE-S3 encryption, and for data transmission from the cloud to mobile devices, we employ HTTPS through CloudFront to ensure secure transmission.</p>
+            <p>We also follow a hybrid encryption model. Initially, we generate a pair of asynchronous encryption keys on the client-side. The private key is stored within the device's Keychain, while the public key is stored on our servers. For each message that's sent, a unique symmetric AES-128 key (a message key) is generated. This key is used to encrypt the actual content of the message. The generated message key is then encrypted asymmetrically using the private key from the sender's Keychain and the public keys of the other participants. This encrypted message key is attached to the message before it is sent. Upon receiving the message, the recipients can decrypt the message key using their respective private keys that correspond to the public keys used for encryption. Once the message key is decrypted, it can be used to decrypt the actual message content. The encrypted content of the messages is persistently stored on our servers.</p>
+            <h5>How is Jamme moderated ?</h5>
+            <p>Jamme has a self-moderation policy: users have powerful tools to fully moderate behaviour on their content - tools that normally other platforms reserve for themselves. You don't need to appeal to us as you can remove offending content yourself! You can delete, hide, and block troublemakers. We don't remove people platform-wide for polite disagreement, or over politics, but we do remove people for harassment, impersonation, foul behaviour, and illegal content.</p>
+            <h5>What happens when I block someone ?</h5>
+            <p>Users can block accounts on the platform they don't like. Blocking a user prevents the user from seeing or interacting with any of your content. When you block a user: The user cannot see any content hosted by you in its entirety. The user is removed from any of your interactions they might have previously been registered. The user cannot see any post or comment posted by you in across the platform.</p>
+            <h5>What is the interest-based ads ?</h5>
+            <p>Interest-based ads are used to highlight products and services that may be relevant to you based on your interests. For example, if you listen to 'nike shoe' audio advertisement, you may later receive a relevant ad on platform related to footwear.</p>
+            <p>We share advertising IDs with third-party skill and content providers that want to deliver ads on Jamme. An advertising ID is a unique string of letters and numbers that does not contain any information that directly identifies you—like your name or email address. It's a privacy-protecting way to help advertisers deliver ads while keeping track of your preferences. Each Jamme user advert interest has unique advertising IDs specific to each skill developer and content provider. This is designed to prevent developers and advertisers from using the advertising IDs to create advertising profiles based on interactions.</p>
+            <h5>How do I manage my advertising preferences on Jamme ?</h5>
+            <p>You can instruct us not to use the advertising IDs to deliver interest-based audio ads to you. You only need to set this preference once for all third parties because this setting applies to your Jamme account. Manage these preferences or reset your advertising preferences in the Jamme app (Settings > Jamme Privacy > Manage Audio Ad Permissions and Ad Preferences).</p>
+            <h5>Why Jamme asks for certain info to create an account ?</h5>
+            <p>When you create a Jamme Account, we ask for some personal information. This info helps keep your account secure and makes our services more useful. To learn more about how we use this info, read the Jamme Privacy Policy. What we ask for and why</p>
+            <h5>Full Name</h5>
+            <p>Enter the name you want to use on Jamme services. When you share content with others, like an audio or photo, your name shows up with it.</p>
+            <h5>Username</h5>
+            <p>Enter a username that you'll use to sign in to your Jamme Account, like myname@apple.com.</p>
+            <p>• You'll create a fiction username to use Jamme services. <br/>• You can use letters, numbers, and periods. <br/>• Your username isn't case-sensitive. You don't need to remember which letters are capital or lowercase.</p>
+            <h5>Password</h5>
+            <p>To help keep your account safe, choose a strong password thats at least 8 characters.</p>
+            <p>• Have a mix of letters, numbers, and symbols. <br/>• Avoid personal info or common words that are easy to guess, like your maiden's name or university name. <br/>• Don't use a password you've used for other accounts or websites. Likewise, don't use this password anywhere else.</p>
+            <p>A strong password helps you :</p>
+            <p>• Keep your personal info safe <br/>• Protect your profile and other content <br/>• Prevent someone else from getting in to your account.</p>
+            <h5>Birthday</h5>
+            <p>Enter your date of birth. Some Jamme services have age requirements in each country.</p>
+            <h5>Asia</h5>
+            <p>• South Korea: 14+ <br/>• Vietnam: 15+</p>
+            <h5>Caribbean</h5>
+            <p>• Aruba: 16+ <br/>• Caribbean Netherlands: 16+ <br/>• Curaçao: 16+ <br/>• Sint Maarten: 16+</p>
+            <h5>Europe</h5>
+            <p>• Austria: 14+ <br/>• Bulgaria: 16+ <br/>• Croatia: 16+ <br/>• Cyprus: 14+ <br/>• Czech Republic: 15+ <br/>• France: 15+ <br/>• Germany: 16+ <br/>• Greece: 15+ <br/>• Hungary: 16+ <br/>• Ireland: 16+ <br/>• Italy: 14+ <br/>• Lithuania: 14+ <br/>• Luxembourg: 16+ <br/>• Netherlands: 16+ <br/>• Poland: 16+ <br/>• Romania: 16+ <br/>• San Marino: 16+ <br/>• Serbia: 15+ <br/>• Slovakia: 16+ <br/>• Slovenia: 16+ <br/>• Spain: 14+</p>
+            <h5>South America</h5>
+            <p>• Chile: 14+ <br/>• Colombia: 14+ <br/>• Peru: 14+ <br/>• Venezuela: 14+</p>
+            <h5>Service-specific age requirements</h5>
+            <p>Some Jamme services have specific age requirements. Here are a few examples :</p>
+            <p>Connect: Users under age restriction are not allowed to use Jamme Connect services. Link for age-restricted videos.</p>
+            <p>Connect: 18+ Besides making sure you're old enough to use certain services and features Jamme uses your birthday to:</p>
+            <p>Determine your age group to offer you a more personalised experience, including personalized recommendations and ads. You can turn off personalised ads.</p>
+            <p>Know when to show a birthday theme on your Jamme profile.</p>
+            <p>Account security and personalisation across Jamme services.</p>
+            <p>Your age isn't visible to others unless you share your birthday publicly or with specific people.</p>
+            <h5>Gender</h5>
+            <p>Select your gender or decide not to say. Learn more about how Jamme uses your gender. Your gender isn't visible to others unless you share it publicly or with specific people.</p>
+            <h5>Phone number</h5>
+            <p>If you have a mobile phone, this info is optional but highly recommended. Depending on how you add a phone number to your account, your number can be used on different Jamme services. For example, if you forget your password, your recovery phone number helps you get back into your account. Learn more about how phone numbers are used.</p>
+            <h5>Phone Number</h5>
+            <p>Adding your phone number to your account simplifies the sign-in process, enhances security, and assists in account recovery if you forget your password. For using a new phone number with Jamme, you need to validate it. This is done by entering a verification code sent via text message after updating your number.</p>
+            <p>Additionally, you can confirm your number using this link: Confirm your recovery phone number.</p>
+            <p>Remember, a verified phone number can only be linked to one account. Verifying a new number will disassociate it from any other accounts previously linked to it. Note: If you're not receiving text messages on the registered phone number, there might be a delay from your phone service provider. Should this issue persist, please reach out to your carrier for support.</p>
+            <h5>Current email address</h5>
+            <p>If you already have an email address, we recommend that you add it. You can use this email address to: <br/> • Help keep your account secure. <br/>• Help you get back in if you can't sign in, like if you forget your password. <br/>• Get notifications from Jamme services.</p>
+            <h5>Professions</h5>
+            <p>Jamme serves as both a social media platform and a tool for building professional networks, with a focus on career advancement. It enables users to discover suitable jobs or internships, and fosters stronger professional connections, especially through audio-based content. By fully completing your Jamme profile, you can highlight your professional journey, including your work experience, skills, and educational background, thus opening doors to new opportunities.</p>
+            <h5>Intrests</h5>
+            <p>Interest Info provides a way for potential matches to learn about your hobbies and values. It offers a wide range of nearly 200 options, including interests in humanity, sports, movies, Netflix, and nightlife activities. This feature helps others understand how you prefer to spend your time and what matters to you.</p>
+            <h5>Change this info later</h5>
+            <p>After you create a Jamme Account, you can change some of this info and control who sees it. Learn how to: <br/>• Edit your Jamme Account Info. <br/>• Control what others see about you. <br/> Give feedback about this article at <a href="mailto: feedback@jamme.app" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #ff4d00;">feedback@jamme.app</a></p>
+        </div>
+    </main>
+
+</body>
+</html>
