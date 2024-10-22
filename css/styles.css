@@ -182,7 +182,7 @@ button {
 }
 
 .nav__menu a,
-.nav__menu button:nth-child(2) {
+.nav__menu button:nth-child(3) {
   color: #101010;
   font-size: 1.12rem;
   font-weight: 500;
@@ -259,7 +259,7 @@ button {
 }
 
 .nav__menu a:is(:hover, :focus-visible),
-.nav__menu button:nth-child(2):is(:hover, :focus-visible) {
+.nav__menu button:nth-child(3):is(:hover, :focus-visible) {
   color: #ff4d00;
 }
 
@@ -1303,6 +1303,10 @@ button {
     padding: 0.4rem;
   }
 
+  .nav__menu {
+    gap: 1rem;
+  }
+
   .main__footer {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1319,11 +1323,7 @@ button {
     display: none;
   }
 
-  .nav__menu {
-    gap: 1rem;
-  }
-
-  .nav__menu a, .nav__menu button:nth-child(2) {
+  .nav__menu a, .nav__menu button:nth-child(3) {
     font-size: 1rem;
     padding: 0;
   }
