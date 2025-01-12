@@ -165,12 +165,11 @@ a {
 }
 
 .blog>img {
-    width: 100%;
+    width: 500px;
     max-width: 100%;
     height: auto;
     object-position: bottom;
     object-fit: cover;
-    aspect-ratio: 16/10;
 }
 
 .blog>h2 {
